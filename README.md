@@ -1,17 +1,23 @@
 
 # React Native Shadow View
 
-## Getting started
+## Install
 
-`$ npm install react-native-shadowview --save`
+With Yarn:
 
-### Mostly automatic installation
+`$ yarn add ajinasokan/react-native-shadowview`
+
+With NPM:
+
+`$ npm install ajinasokan/react-native-shadowview --save`
+
+## Link
+
+### Automatic linking
 
 `$ react-native link react-native-shadowview`
 
-### Manual installation
-
-#### Android
+### Manual linking (only for Android)
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
   - Add `import com.innoventionist.rnshadowview.RNShadowViewPackage;` to the imports at the top of the file
@@ -27,9 +33,26 @@
   	```
 
 ## Usage
+
 ```javascript
 import ShadowView from 'react-native-shadowview';
 
+<ShadowView
+	shadowColor={'#7fd5d5d5'} 
+	shadowRadius={10} 
+	shadowAngle={90}>
 
+	<View style={{ 
+		height: 200,
+		width: 200,
+		borderRadius: 100,
+		backgroundColor: '#ffffff',
+		justifyContent: 'center',
+		alignItems: 'center' }}>
+		<Text style={styles.instructions}>
+			To get started, edit App.js
+		</Text>
+	</View>
+</ShadowView>
 ```
   
