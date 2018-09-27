@@ -31,7 +31,7 @@ repositories {
 }
 
 dependencies {
-    // compile 'com.github.devlight.shadowlayout:library:+'
+    compile 'com.github.devlight.shadowlayout:library:+'
     compile "com.facebook.react:react-native:+"
 }
   
